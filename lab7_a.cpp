@@ -17,11 +17,15 @@ bool isf(int l,int r)
     for(int i=l;i<=r;i++)
     {
         if(s[i]=='.')cnt++;
-        else if(!isnum(s[i]))return false;
-        else num++;   
+        else if(!isnum(s[i]))
+            return false;
+        else
+            num++;
     }
-    if(num==0)return false;
-    if(cnt!=1)return false;
+    if(num==0)
+        return false;
+    if (cnt != 1)
+        return false;
     return true;
 }
 bool isi(int l,int r)
@@ -41,8 +45,8 @@ int main()
     getline(cin,s);
     n=s.length()-1;
     bool flag=true;
-    int e=-1;
-    for(int i=0;i<=n;i++)
+    int e = -1;
+    for (int i = 0; i <= n; i++)
     {
         if(s[i]=='e'||s[i]=='E')
         {
